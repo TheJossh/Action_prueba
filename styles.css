@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Navigation Styles */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: #6b4f4f;
+    border-radius: 4px;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(img/body.jpg);
+    background-size: cover;
+    
+}
+
+
+main {
+    padding: 20px;
+}
+
+.cafes {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cafes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+}
+
+
+
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    color: #555;
+}
+
+
+
+
+#nosotros {
+    background-color: #f8f9fa;
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+#nosotros .container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#nosotros h3 {
+    font-size: 2em; 
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+#nosotros p {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: #555; 
+    margin-bottom: 20px; 
+}
+
+/*para que sea reponsive */
+
+
+@media (max-width: 768px) {
+    #nosotros {
+        padding: 30px 15px; 
+    }
+
+    #nosotros h3 {
+        font-size: 1.8em; 
+    }
+
+    #nosotros p {
+        font-size: 1.1em; 
+    }
+}
+
+/* Media queries para dispositivos muy pequeños */
+
+@media (max-width: 480px) {
+    #nosotros {
+        padding: 20px 10px; 
+    }
+
+    #nosotros h3 {
+        font-size: 1.6em; 
+    }
+
+    #nosotros p {
+        font-size: 1em; 
+    }
+}
+
+
+footer {
+    background-color: #444;
+    color:#eee;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:1rem;
+}
+
+footer p{
+
+    padding: 0.5rem 1rem;
+}
+
+footer ol, footer ul {
+    list-style: none;
+}
+
+footer li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color:#eee;
+    text-decoration: none;
+
+}
+
+/*pal pinchi header que se me esta cortando */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
